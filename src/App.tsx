@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
 import './App.css';
+import Tiket from './components/Ticket';
 
 function App() {
   const initial={name:'',age:''};
+
    const [cat,setCat]= useState([{...initial}]);
    const addNewCat=()=>{
     
@@ -62,7 +64,10 @@ function App() {
         )
       })}      
       <input type="submit" value="Submit" />        
-    </form>   
+    </form> 
+    <div>
+      <Tiket />
+      </div>  
     </div>
   );
 }
